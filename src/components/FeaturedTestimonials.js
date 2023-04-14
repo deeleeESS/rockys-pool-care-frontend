@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 import Image from 'next/future/image'
 
-import { Container } from '@/components/Container'
-import podcastImage1 from '@/images/stock/podcast-01.jpg'
-import podcastImage2 from '@/images/stock/podcast-02.jpg'
+import { Container } from '../components/Container'
+import podcastImage1 from '../images/stock/podcast-01.jpg'
+import podcastImage2 from '../images/stock/podcast-02.jpg'
 
 const testimonials = [
   {

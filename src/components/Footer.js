@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/future/image'
 
-import logo from '@/images/logo-light.png'
-import { Container } from '@/components/Container'
+import logo from '../images/logo-light.png'
+import { Container } from '../components/Container'
 
 const navigation = {
   company: [

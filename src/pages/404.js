@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
+import { Button } from '../components/Button'
+import { Container } from '../components/Container'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 export default function Custom404() {
   return (

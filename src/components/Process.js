@@ -1,8 +1,8 @@
 import Image from 'next/future/image'
 
-import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
-import processImage from '@/images/stock/process.jpg'
+import { Container } from '../components/Container'
+import { Button } from '../components/Button'
+import processImage from '../images/stock/process.jpg'
 
 export function Process() {
   return (

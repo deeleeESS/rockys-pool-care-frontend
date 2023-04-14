@@ -1,9 +1,9 @@
 import Image from 'next/future/image'
 
-import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
-import featureImage1 from '@/images/stock/feature-image-01.jpg'
-import featureImage2 from '@/images/stock/feature-image-02.jpg'
+import { Container } from '../components/Container'
+import { Button } from '../components/Button'
+import featureImage1 from '../images/stock/feature-image-01.jpg'
+import featureImage2 from '../images/stock/feature-image-02.jpg'
 
 export function FeatureBlocks() {
   return (

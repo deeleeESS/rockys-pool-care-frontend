@@ -1,8 +1,8 @@
 import Image from 'next/future/image'
 
-import MapImage from '@/images/map.png'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
+import MapImage from '../images/map.png'
+import { Button } from '../components/Button'
+import { Container } from '../components/Container'
 
 export function Map() {
   return (

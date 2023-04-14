@@ -2,8 +2,8 @@ import Image from 'next/future/image'
 import clsx from 'clsx'
 import { Disclosure, Transition } from '@headlessui/react'
 
-import { Container } from '@/components/Container'
-import faqImage from '@/images/stock/faq-image.jpg'
+import { Container } from '../components/Container'
+import faqImage from '../images/stock/faq-image.jpg'
 
 const faqs = [
   {

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 
 const tiers = ['free', 'hobby', 'standard', 'pro']
 

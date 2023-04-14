@@ -1,7 +1,7 @@
 import Image from 'next/future/image'
 
-import TeamImage from '@/images/stock/team.jpg'
-import { Container } from '@/components/Container'
+import TeamImage from '../images/stock/team.jpg'
+import { Container } from '../components/Container'
 
 export function StoryWithStats() {
   return (

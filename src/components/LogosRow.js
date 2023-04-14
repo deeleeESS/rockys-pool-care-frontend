@@ -1,12 +1,12 @@
 import Image from 'next/future/image'
 import clsx from 'clsx'
 
-import { Container } from '@/components/Container'
-import logoBuzzfeed from '@/images/logos/buzzfeed.svg'
-import logoDailyNews from '@/images/logos/daily-news.svg'
-import logoEntrepreneur from '@/images/logos/entrepreneur.svg'
-import logoQuartz from '@/images/logos/quartz.svg'
-import logoWired from '@/images/logos/wired.svg'
+import { Container } from '../components/Container'
+import logoBuzzfeed from '../images/logos/buzzfeed.svg'
+import logoDailyNews from '../images/logos/daily-news.svg'
+import logoEntrepreneur from '../images/logos/entrepreneur.svg'
+import logoQuartz from '../images/logos/quartz.svg'
+import logoWired from '../images/logos/wired.svg'
 
 const companies = [
   { name: 'Buzzfeed', logo: logoBuzzfeed },

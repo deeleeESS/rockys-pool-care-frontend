@@ -1,15 +1,15 @@
 import Image from 'next/future/image'
 
-import Team01 from '@/images/avatars/team-01.jpg'
-import Team02 from '@/images/avatars/team-02.jpg'
-import Team03 from '@/images/avatars/team-03.jpg'
-import Team04 from '@/images/avatars/team-04.jpg'
-import Team05 from '@/images/avatars/team-05.jpg'
-import Team06 from '@/images/avatars/team-06.jpg'
-import Team07 from '@/images/avatars/team-07.jpg'
-import Team08 from '@/images/avatars/team-08.jpg'
-import Team09 from '@/images/avatars/team-09.jpg'
-import { Container } from '@/components/Container'
+import Team01 from '../images/avatars/team-01.jpg'
+import Team02 from '../images/avatars/team-02.jpg'
+import Team03 from '../images/avatars/team-03.jpg'
+import Team04 from '../images/avatars/team-04.jpg'
+import Team05 from '../images/avatars/team-05.jpg'
+import Team06 from '../images/avatars/team-06.jpg'
+import Team07 from '../images/avatars/team-07.jpg'
+import Team08 from '../images/avatars/team-08.jpg'
+import Team09 from '../images/avatars/team-09.jpg'
+import { Container } from '../components/Container'
 
 const team = [
   {

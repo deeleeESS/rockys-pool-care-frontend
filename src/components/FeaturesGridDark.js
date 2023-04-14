@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 
 const features = [
   {
