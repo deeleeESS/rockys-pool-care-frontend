@@ -2,24 +2,24 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import Image from 'next/future/image'
 
 import Avatar from '../images/avatars/avatar-01.jpg'
-import homeHeroImg from '../images/stock/home-hero.jpg'
+import homeHeroImg from '../images/stock/house-pool-01.jpg'
 import { Container } from '../components/Container'
 import { Button } from '../components/Button'
 
 export function HomeHero() {
   return (
-    <section className="relative overflow-hidden bg-amber-100 pt-16 md:pt-20 xl:pt-32">
+    <section className="relative overflow-hidden bg-primary pt-16 md:pt-20 xl:pt-32">
       <Container>
-        <div className="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-14">
-          <h1 className="text-5xl font-semibold leading-tighter text-slate-900 md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-6xl xl:leading-tighter">
-            Starting a podcast has never been easier
+        <div className="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-24">
+          <h1 className="text-5xl font-semibold leading-tighter text-white md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-6xl xl:leading-tighter">
+            Make a splash with crystal clear pools
           </h1>
           <ul className="mt-6 flex flex-col space-y-4 md:mx-auto md:mt-8 md:max-w-3xl md:flex-row md:space-y-0 md:space-x-2 lg:space-x-4 xl:mx-0 xl:flex-col xl:space-y-4 xl:space-x-0">
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
-              <p className="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
+              <p className="ml-3 text-white lg:ml-4 xl:ml-5 xl:text-lg">
                 One click integrations, that{' '}
-                <span className="font-medium text-slate-900">
+                <span className="font-medium text-white">
                   work for you.
                 </span>
               </p>
@@ -28,14 +28,14 @@ export function HomeHero() {
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
                 Just record and hit publish, it’s that{' '}
-                <span className="font-medium text-slate-900">simple.</span>
+                <span className="font-medium text-white">simple.</span>
               </p>
             </li>
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
                 Get weekly reports straight to your inbox with{' '}
-                <span className="font-medium text-slate-900">key metrics.</span>
+                <span className="font-medium text-white">key metrics.</span>
               </p>
             </li>
           </ul>
@@ -54,6 +54,13 @@ export function HomeHero() {
           <p className="mt-4 flex text-md text-slate-600/90 md:justify-center xl:justify-start xl:text-base">
             30-day free trial. No card required.
           </p>
+          <div className="absolute top-16 right-16 hidden w-5/12 md:block border-2 border-white shadow-lg rounded-lg">
+            <Image
+              src={homeHeroImg}
+              className="h-auto w-full object-cover"
+              priority
+            />
+          </div>
         </div>
       </Container>
 
@@ -93,7 +100,7 @@ export function HomeHero() {
                   />
                 </div>
                 <div className="ml-5">
-                  <p className="font-medium text-slate-900">Courtland Allen</p>
+                  <p className="font-medium text-white">Courtland Allen</p>
 
                   <p className="font-medium text-slate-500">
                     Indie Hackers Podcast
@@ -101,13 +108,6 @@ export function HomeHero() {
                 </div>
               </div>
             </blockquote>
-          </div>
-          <div className="absolute bottom-0 right-6 hidden w-1/3 bg-gray-secondary-100 md:block lg:right-12 xl:-right-0 xl:w-full xl:max-w-xl 2xl:-right-32 2xl:max-w-[640px]">
-            <Image
-              src={homeHeroImg}
-              className="h-auto w-full object-cover"
-              priority
-            />
           </div>
         </Container>
       </div>
