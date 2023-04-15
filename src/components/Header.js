@@ -8,8 +8,8 @@ import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
 
 import { Container } from '../components/Container'
 import { Button } from '../components/Button'
-import logo from '../images/logo-dark.png'
-import logoIcon from '../images/logo-icon.png'
+import logo from '../images/rockys-logo.png'
+import logoIcon from '../images/mobile-logo.jpg'
 
 const links = [
   { label: 'Home', href: '/' },
@@ -98,7 +98,7 @@ export function Header() {
           >
             <Popover.Panel
               as="div"
-              className="absolute inset-x-0 top-0 z-30 px-5 pt-24 pb-8 overflow-hidden bg-amber-100"
+              className="absolute inset-x-0 top-0 z-30 px-5 pt-24 pb-8 overflow-hidden bg-secondary"
             >
               <div>
                 <div className="flex flex-col divide-y divide-gray-secondary-400/75">
@@ -172,7 +172,7 @@ export function Header() {
   }
 
   return (
-    <header className="h-24 bg-amber-100">
+    <header className="h-24 bg-secondary sticky top-0 z-50">
       <Container className="flex items-center w-full h-full border-b border-gray-secondary-300/60">
         <nav className="relative z-50 flex items-center justify-between w-full ">
           <div className="flex items-center space-x-8 lg:space-x-12">
@@ -180,11 +180,11 @@ export function Header() {
               <a className="flex items-center flex-shrink-0">
                 <Image
                   src={logo}
-                  className="w-auto h-7 sm:h-8 md:hidden lg:block lg:h-9"
+                  className="w-full h-7 sm:h-7 hidden lg:block lg:h-20"
                 />
                 <Image
                   src={logoIcon}
-                  className="hidden w-auto h-7 md:block lg:hidden"
+                  className="block w-auto h-20 md:block lg:hidden rounded-3xl"
                 />
               </a>
             </Link>
@@ -194,7 +194,7 @@ export function Header() {
                   <a
                     className={clsx(
                       router.pathname == link.href
-                        ? 'bg-amber-50 text-slate-900'
+                        ? 'bg-primaryDark text-white'
                         : 'text-slate-700 hover:bg-amber-50 hover:text-slate-900',
                       'inline-block px-4 py-2 font-medium'
                     )}
@@ -204,61 +204,14 @@ export function Header() {
                 </Link>
               ))}
 
-              <Menu as="div" className="relative">
-                {({ open }) => (
-                  <>
-                    <Menu.Button
-                      className={`group flex items-center px-4  py-2  font-medium duration-150 ease-in-out ${
-                        open
-                          ? 'bg-amber-50 text-slate-900'
-                          : 'text-slate-700 hover:bg-amber-50  hover:text-slate-900'
-                      }`}
-                    >
-                      <span>Pages</span>
-                      <ChevronDownIcon
-                        className={`ml-2 h-5 w-5 duration-300 ${
-                          open
-                            ? 'rotate-180 text-slate-900'
-                            : 'text-slate-600/90 group-hover:text-slate-900'
-                        }`}
-                        aria-hidden="true"
-                      />
-                    </Menu.Button>
-
-                    <Menu.Items className="absolute right-0 z-20 mt-3 w-52 space-y-1 bg-gray-secondary-50 p-2.5 drop-shadow filter">
-                      {pages.map((subLink, i) => (
-                        <Menu.Item key={`${subLink.label}-dropdown-desktop`}>
-                          <Link href={subLink.href}>
-                            <a
-                              className={`block py-3.5 px-5 font-medium ${
-                                router.pathname == subLink.href
-                                  ? 'bg-gray-secondary-100/60 text-slate-900'
-                                  : 'text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900'
-                              }`}
-                            >
-                              {subLink.label}
-                            </a>
-                          </Link>
-                        </Menu.Item>
-                      ))}
-                    </Menu.Items>
-                  </>
-                )}
-              </Menu>
+        
             </div>
           </div>
 
           <div>
-            <div className="flex items-center space-x-4">
-              <div className="hidden lg:block">
-                <Link href="/signin">
-                  <a className="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
-                    Sign in
-                  </a>
-                </Link>
-              </div>
-              <Button size="md" href="/signup">
-                Sign up free
+            <div className="flex items-center space-x-3">
+              <Button size="md" href="/signup" className="bg-primaryDark text-white">
+                User Portal
               </Button>
             </div>
           </div>

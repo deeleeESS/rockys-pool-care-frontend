@@ -18,24 +18,24 @@ export function HomeHero() {
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-white lg:ml-4 xl:ml-5 xl:text-lg">
-                One click integrations, that{' '}
-                <span className="font-medium text-white">
-                  work for you.
+              Hassle-free pool ownership experience,{' '}
+                <span className="font-medium text-primaryDark">
+                  for a flat rate
                 </span>
               </p>
             </li>
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
-                Just record and hit publish, it’s that{' '}
-                <span className="font-medium text-white">simple.</span>
+                Expert pool care for{' '}
+                <span className="font-medium text-white">pristine condition.</span>
               </p>
             </li>
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
-                Get weekly reports straight to your inbox with{' '}
-                <span className="font-medium text-white">key metrics.</span>
+                Transparent pricing with{' '}
+                <span className="font-medium text-white">no hidden fees.</span>
               </p>
             </li>
           </ul>
@@ -64,7 +64,7 @@ export function HomeHero() {
         </div>
       </Container>
 
-      <div className="bg-gradient-to-r from-vanilla via-amber-50 to-amber-100">
+      {/* <div className="bg-gradient-to-r from-vanilla via-amber-50 to-amber-100">
         <Container className="relative">
           <div className="mx-auto max-w-lg pt-20 pb-8 pl-4 md:mx-0 md:max-w-md lg:max-w-lg lg:pt-28 lg:pb-16 xl:max-w-xl xl:py-12 xl:pl-14 2xl:pl-0">
             <blockquote>
@@ -110,7 +110,7 @@ export function HomeHero() {
             </blockquote>
           </div>
         </Container>
-      </div>
+      </div> */}
     </section>
   )
 }

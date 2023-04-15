@@ -9,8 +9,9 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: "#5a8bd6",
+        primary: "#53B2E8",
         primaryLight: "#61acef",
+        primaryDark: "#0D5077",
         primaryLighter: "#4679ca",
         secondary: "#79888d",
         "amber-50": "#FFF9EB",
