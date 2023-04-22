@@ -5,12 +5,12 @@ import { Button } from '../components/Button'
 
 const features = [
   {
-    name: 'Create clips with ease',
+    name: 'Skimming/Debris Removal',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      "Skimming and removing debris from your pool's surface to ensure that it's clean and free from leaves, bugs, and other contaminants.",
     href: '#',
     className:
-      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-gray-secondary-400/60",
+      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-white",
     icon: function ClipsIcon() {
       return (
         <svg
@@ -41,12 +41,12 @@ const features = [
     },
   },
   {
-    name: 'Cloud hosting and storage',
+    name: 'Vacuuming',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      "Thorough vacuuming of your pool's walls and floor to remove dirt and debris that settles on the surface.",
     href: '#',
     className:
-      "lg:after:content-[''] lg:after:right-0 lg:after:h-5/6 lg:after:w-px lg:after:absolute lg:after:bg-gray-secondary-400/60 before:top-0 before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-[''] sm:before:h-0",
+      "lg:after:content-[''] lg:after:right-0 lg:after:h-5/6 lg:after:w-px lg:after:absolute lg:after:bg-white before:top-0 before:w-5/6 before:h-px before:absolute before:bg-white before:content-[''] sm:before:h-0",
     icon: function CloudIcon() {
       return (
         <svg
@@ -74,12 +74,12 @@ const features = [
     },
   },
   {
-    name: 'Automatic episode transcripts',
+    name: 'Brushing',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      "Brushing of your pool's walls and floor to remove algae buildup and prevent staining.",
     href: '#',
     className:
-      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-gray-secondary-400/60 lg:after:w-0 before:top-0 before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-[''] lg:before:h-0",
+      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-white lg:after:w-0 before:top-0 before:w-5/6 before:h-px before:absolute before:bg-white before:content-[''] lg:before:h-0",
     icon: function TranscriptsIcon() {
       return (
         <svg
@@ -107,12 +107,12 @@ const features = [
     },
   },
   {
-    name: 'World class editing software',
+    name: 'Water Chemistry Balancing',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      "Regular testing and adjusting of your pool's water chemistry to ensure a proper pH balance and optimal water quality.",
     href: '#',
     className:
-      "lg:after:content-[''] lg:after:right-0 lg:after:h-5/6 lg:after:w-px lg:after:absolute lg:after:bg-gray-secondary-400/60 before:top-0 before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-['']",
+      "lg:after:content-[''] lg:after:right-0 lg:after:h-5/6 lg:after:w-px lg:after:absolute lg:after:bg-white before:top-0 before:w-5/6 before:h-px before:absolute before:bg-white before:content-['']",
     icon: function EditingIcon() {
       return (
         <svg
@@ -144,12 +144,12 @@ const features = [
     },
   },
   {
-    name: 'Key podcast metrics in real-time',
+    name: 'Filter Maintenance',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      'Cleaning or replacing pool filters to ensure efficient water circulation and filtration.',
     href: '#',
     className:
-      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-gray-secondary-400/60 before:top-0 before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-['']",
+      "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-white before:top-0 before:w-5/6 before:h-px before:absolute before:bg-white before:content-['']",
     icon: function MetricsIcon() {
       return (
         <svg
@@ -197,12 +197,12 @@ const features = [
     },
   },
   {
-    name: 'Crisp audio optimizations',
+    name: 'Maintenance Reports',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      "Detailed reports on the services provided, chemical levels, and any maintenance issues found during the visit, providing you with valuable insight into the health of your pool",
     href: '#',
     className:
-      "before:top-0 before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-['']",
+      "before:top-0 before:w-5/6 before:h-px before:absolute before:bg-white before:content-['']",
     icon: function AudioIcon() {
       return (
         <svg
@@ -229,19 +229,19 @@ const features = [
 
 export function FeaturesGrid() {
   return (
-    <section className="relative overflow-hidden bg-amber-50 pt-20 pb-8 lg:pt-28 lg:pb-12">
+    <section className="relative overflow-hidden bg-primary pt-20 pb-8 lg:pt-28 lg:pb-12">
       <Container>
         <div className="relative mx-auto w-full max-w-lg sm:max-w-3xl lg:mx-0 lg:max-w-none">
           <h2 className="mx-auto max-w-2xl text-center text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
-            Professional podcasting without the hassle
+            Expert Pool Cleaning Services for a Sparkling Pool
           </h2>
-          <div className="mt-10 grid sm:mt-16 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3">
+          <div className="mt-10 grid sm:mt-16 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3 border border-white">
             {features.map((feature, index) => (
               <div
                 key={feature.name}
                 className={clsx(
                   feature.className,
-                  'relative mx-auto flex max-w-md flex-col items-center justify-center py-12 px-8 sm:mx-0 sm:max-w-none xl:py-16 xl:px-12'
+                  'relative mx-auto flex max-w-md flex-col items-center justify-center py-12 px-8 sm:mx-0 sm:max-w-none xl:py-16 xl:px-12 bg-white bg-opacity-10'
                 )}
               >
                 <div className="flex flex-1 flex-col items-center">

@@ -7,6 +7,7 @@ import { Map } from '../components/Map'
 import { FaqCTA } from '../components/FaqCTA'
 import { CallToAction } from '../components/CallToAction'
 import { Footer } from '../components/Footer'
+import ContactSection from '../components/ContactSection'
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
       </Head>
 
       <Header />
-      <ContactHeader />
-      <ContactInfo />
-      <Map />
-      <FaqCTA />
-      <CallToAction />
+      <ContactSection />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </>
   )
