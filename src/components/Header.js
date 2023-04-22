@@ -14,20 +14,10 @@ import logoIcon from '../images/mobile-logo.jpg'
 const links = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Pricing', href: '/pricing' },
+  { label: 'Services', href: '/services' },
   { label: 'Contact', href: '/contact' },
 ]
 
-const pages = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Contact', href: '/contact' },
-  { label: 'Sign in', href: '/signin' },
-  { label: 'Sign up', href: '/signup' },
-  { label: 'Password reset', href: '/password-reset' },
-  { label: '404', href: '/404' },
-]
 
 export function Header() {
   const router = useRouter()
@@ -134,21 +124,6 @@ export function Header() {
                             aria-hidden="true"
                           />
                         </Disclosure.Button>
-
-                        <Disclosure.Panel className="z-20 px-4 space-y-0">
-                          {pages.map((subLink) => (
-                            <div
-                              className="mt-2"
-                              key={`${subLink.label}-dropdown-desktop`}
-                            >
-                              <Link href={subLink.href}>
-                                <a className="block px-3 py-3 font-medium transition duration-300 ease-in-out text-slate-700 hover:bg-amber-50 hover:text-slate-900">
-                                  {subLink.label}
-                                </a>
-                              </Link>
-                            </div>
-                          ))}
-                        </Disclosure.Panel>
                       </>
                     )}
                   </Disclosure>

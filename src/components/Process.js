@@ -6,30 +6,29 @@ import processImage from '../images/stock/process.jpg'
 
 export function Process() {
   return (
-    <section className="relative overflow-hidden bg-slate-700 pt-24 lg:py-24">
+    <section className="relative overflow-hidden bg-primaryDark pt-24 lg:py-24">
       <Container>
         <div className="relative z-10 mx-auto w-full max-w-lg sm:max-w-xl lg:mx-0">
           <h2 className="text-4xl font-semibold leading-tight text-white sm:text-5xl sm:leading-tight">
-            How Wavvy works
+            Transform Your Pool
           </h2>
           <div className="mt-12 space-y-8 divide-y divide-gray-secondary-400/90 sm:mt-16">
             <div className="flex items-center space-x-10">
               <span className="text-4xl font-semibold text-white">01</span>
               <span className="text-xl leading-snug text-slate-50">
-                Sign up in a few minutes
+                Schedule a free consultation that fits your time
               </span>
             </div>
             <div className="flex items-center space-x-10 pt-8">
               <span className="text-4xl font-semibold text-white">02</span>
               <span className="text-xl leading-snug text-slate-50">
-                Migrate episodes with a few click
+                Receive weekly trips from our trained professionals
               </span>
             </div>
             <div className="flex items-center space-x-10 pt-8">
               <span className="text-4xl font-semibold text-white">03</span>
               <span className="text-xl leading-snug text-slate-50">
-                Your account is open; you can start recording and leveraging our
-                platform
+                Enjoy a crystal clear pool all season long
               </span>
             </div>
           </div>
@@ -39,7 +38,7 @@ export function Process() {
             color="light"
             className="mt-16 sm:mt-20"
           >
-            Get your free account
+            Contact Us
           </Button>
         </div>
       </Container>

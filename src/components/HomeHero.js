@@ -18,9 +18,9 @@ export function HomeHero() {
             <li className="flex items-center md:items-start xl:items-center">
               <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800 md:h-6 md:w-6 xl:h-5 xl:w-5" />
               <p className="ml-3 text-white lg:ml-4 xl:ml-5 xl:text-lg">
-              Hassle-free pool ownership experience,{' '}
+              Hassle-free{' '}
                 <span className="font-medium text-primaryDark">
-                  for a flat rate
+                pool ownership experiences
                 </span>
               </p>
             </li>
@@ -41,7 +41,7 @@ export function HomeHero() {
           </ul>
           <div className="mt-10 flex flex-col sm:flex-row sm:space-x-5 md:mt-12 md:justify-center xl:justify-start">
             <Button href="/signup" className="w-full sm:w-auto">
-              Get your free account
+              Pay My Bill Online
             </Button>
             <Button
               href="/signin"
