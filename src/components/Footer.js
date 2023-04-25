@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/future/image'
 
-import logo from '../images/logo-light.png'
+import logo from '../images/rockys-logo.png'
 import { Container } from '../components/Container'
 
 const navigation = {
@@ -41,13 +41,16 @@ const navigation = {
 
 export function Footer() {
   return (
-    <section className="overflow-hidden bg-slate-700 pt-20 pb-12">
+    <section className="overflow-hidden bg-secondary pt-20 pb-12">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-12">
           <div className="max-w-xl lg:col-span-4 lg:max-w-none">
             <Link href="/" aria-label="Home">
               <a className="flex flex-shrink-0">
-                <Image src={logo} className="h-7 w-auto sm:h-8 lg:h-9" />
+              <Image
+                  src={logo}
+                  className="h-7 w-auto sm:h-8 lg:h-9"
+                />
               </a>
             </Link>
             <p className="mt-10 text-md leading-relaxed text-slate-50">

@@ -23,14 +23,14 @@ const testimonials = [
       podcast: 'The Tim Ferriss Show',
       image: Podcast01,
       quote:
-        'We took our time to evaluate various options before choosing Wavvy, and we are SO glad that we did. The features are easy to use, and their customer service team is friendly and helpful! We highly recommend them for podcast hosting.',
+        "I couldn't be happier with the pool cleaning service provided by this company. They are always reliable and do a fantastic job keeping my pool in top shape.",
     },
     {
       person: 'Lex Fridman',
       podcast: 'Lex Fridman Podcast',
       image: Podcast02,
       quote:
-        "We're a rapidly growing podcast, and need a reliable podcast host that can scale with us. Wavvy's speed, ease of use, and flexibility have allowed us to grow our audience more quickly than ever before. We love Wavvy, and would recommend it to any podcaster out there.",
+      "After struggling to maintain my pool on my own, I decided to give this company a try. I'm so glad I did! Their weekly service has saved me so much time and my pool has never looked better.",
     },
   ],
   [
@@ -39,14 +39,14 @@ const testimonials = [
       podcast: 'The Portal',
       image: Podcast03,
       quote:
-        "We have been really happy with Wavvy's customer service, and the pricing is competitive with other podcast hosting companies. This is a great service for anyone looking to host a podcast or audio blog.",
+      "I highly recommend this pool cleaning service. The team is professional, friendly, and always goes above and beyond to make sure my pool is clean and well-maintained.",
     },
     {
       person: 'Joe Rogan',
       podcast: 'The Joe Rogan Experience',
       image: Podcast04,
       quote:
-        "Wavvy is a great tool for podcasters. It's easy to use, and the support team is quick to respond. I would recommend Wavvy to anyone looking to host their podcast.",
+      "I've been using this pool cleaning service for over a year now and have never been disappointed. They are always on time, thorough, and do an excellent job.",
     },
   ],
   [
@@ -55,79 +55,16 @@ const testimonials = [
       podcast: 'Deep Questions with Cal Newport',
       image: Podcast05,
       quote:
-        'Wavvy has been very helpful in our podcasting endeavors. They take care of all the backend hosting, which leaves us free to focus on growing our audience and creating great content.',
+      "If you're looking for a reliable and affordable pool cleaning service, look no further. This company has exceeded my expectations in every way.",
     },
     {
       person: 'Jocko Willink',
       podcast: 'Jocko Podcast',
       image: Podcast06,
       quote:
-        'I have to say, the Wavvy team is so easy to work with, and every time I have an issue, I get a response within minutes. This is for real, folks. They are hands down the best podcast host out there.',
+      "I was hesitant to hire a pool cleaning service at first, but after seeing the results from this company, I'm so glad I did. My pool has never looked better!",
     },
-  ],
-  [
-    {
-      person: 'Sam Parr',
-      podcast: 'My First Million',
-      image: Podcast07,
-      quote:
-        "We're thrilled to have Wavvy as a podcast partner. They have an amazing service, and have helped us grow our business and become more successful.",
-    },
-    {
-      person: 'Duncan Trussell',
-      podcast: 'Duncan Trussell Family Hour',
-      image: Podcast08,
-      quote:
-        "Wavvy's pricing and features are a no brainer, especially for podcasters. I can't recommend it enough. If you're looking for podcast hosting, look no further.",
-    },
-  ],
-  [
-    {
-      person: 'Benjamin Grundy',
-      podcast: 'Mysterious Universe',
-      image: Podcast09,
-      quote:
-        "Wavvy is a great choice for podcasters of any level. The interface is intuitive, and you can easily keep track of the stats. If you're looking for a podcast hosting service, give Wavvy a try.",
-    },
-    {
-      person: 'Arvid Kahl',
-      podcast: 'The Bootstrapped Founder',
-      image: Podcast10,
-      quote: 'I would recommend Wavvy to any podcaster just starting out.',
-    },
-  ],
-  [
-    {
-      person: 'Dr. Andrew Huberman',
-      podcast: 'Huberman Lab',
-      image: Podcast11,
-      quote:
-        "The Wavvy team is extremely helpful in every aspect of their offering. They are quick to answer questions, and they continually make improvements based on user feedback. If you're looking to start a podcast, I would trust no one else than Wavvy to host it.",
-    },
-    {
-      person: 'Stephen West',
-      podcast: 'Philosophize This!',
-      image: Podcast12,
-      quote:
-        "We've found Wavvy to be a reliable and capable podcast host. In fact, we're using it right now to power our own podcast. We've been able to grow our audience with Wavvy's helpful marketing tools.",
-    },
-  ],
-  [
-    {
-      person: 'Krystal Ball',
-      podcast: 'Breaking Points',
-      image: Podcast13,
-      quote:
-        "I can't recommend Wavvy highly enough. It's the best podcast hosting platform out there, and it's perfect for podcasters. It's easy to use, easy to navigate, and has a ton of helpful features.",
-    },
-    {
-      person: 'Michael Bisping',
-      podcast: 'Believe You Me',
-      image: Podcast14,
-      quote:
-        "We've been using Wavvy for a few months, now, and it's been a great experience. The support team is fantastic. The integration with Spotify is simple. And the pricing is absolutely unbeatable.",
-    },
-  ],
+  ]
 ]
 
 export function TestimonialsSlide() {
@@ -150,9 +87,9 @@ export function TestimonialsSlide() {
   }, [])
 
   return (
-    <section className="py-16 overflow-hidden bg-vanilla sm:py-24 lg:py-28">
+    <section className="overflow-hidden bg-vanilla ">
       <h2 className="max-w-xl px-4 mx-auto text-4xl font-semibold leading-tight text-center text-slate-900 sm:max-w-2xl sm:px-6 sm:text-5xl sm:leading-tight lg:px-8">
-        See what podcasters have to say about us
+        See what others say about us
       </h2>
       <div className="relative mt-20">
         <div className="flex items-center gap-6 px-12 animate w-max animate-infiniteScroll sm:gap-8 lg:gap-12">
@@ -186,9 +123,9 @@ export function TestimonialsSlide() {
                             {testimonial.person}
                           </p>
 
-                          <p className="text-slate-600/90 sm:text-md lg:text-lg">
+                          {/* <p className="text-slate-600/90 sm:text-md lg:text-lg">
                             {testimonial.podcast}
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                       <div className="relative">

@@ -6,9 +6,59 @@ import homeHeroImg from '../images/stock/house-pool-01.jpg'
 import { Container } from '../components/Container'
 import { Button } from '../components/Button'
 
+const Waves = () => {
+  return (
+    <>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-[16px]"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fillOpacity="1"
+          className="path-0 fill-secondary"
+        ></path>
+      </svg>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-[8px]"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fillOpacity="1"
+          className="path-0 fill-primaryDark"
+        ></path>
+      </svg>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fill="#FFFFFF"
+          fillOpacity="1"
+          className="path-0"
+        ></path>
+      </svg>
+    </>
+  );
+};
+
 export function HomeHero() {
   return (
-    <section className="relative overflow-hidden bg-primary pt-16 md:pt-20 xl:pt-32">
+    <section className="relative overflow-hidden bg-primary pt-16 md:pt-20 xl:pt-32 pb-72">
       <Container>
         <div className="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-24">
           <h1 className="text-5xl font-semibold leading-tighter text-white md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-6xl xl:leading-tighter">
@@ -63,7 +113,7 @@ export function HomeHero() {
           </div>
         </div>
       </Container>
-
+      <Waves />
       {/* <div className="bg-gradient-to-r from-vanilla via-amber-50 to-amber-100">
         <Container className="relative">
           <div className="mx-auto max-w-lg pt-20 pb-8 pl-4 md:mx-0 md:max-w-md lg:max-w-lg lg:pt-28 lg:pb-16 xl:max-w-xl xl:py-12 xl:pl-14 2xl:pl-0">

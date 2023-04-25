@@ -18,7 +18,7 @@ const companies = [
 
 export function LogosRow() {
   return (
-    <section className="relative py-20 overflow-hidden bg-vanilla lg:pt-24">
+    <section className="relative overflow-hidden bg-vanilla">
       <Container>
         <p className="text-base font-semibold tracking-widest text-center uppercase text-slate-500">
           As featured in

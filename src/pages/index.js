@@ -26,9 +26,9 @@ export default function Home() {
       <LogosRow />
       <FeatureBlocks />
       <FeaturesGrid />
-      <Process />
+      {/* <Process /> */}
       <TestimonialsSlide />
-      <Faqs />
+      {/* <Faqs /> */}
       <CallToAction />
       <Footer />
     </>
