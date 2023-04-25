@@ -148,7 +148,7 @@ export function Header() {
 
   return (
     <header className="h-24 bg-secondary sticky top-0 z-50">
-      <Container className="flex items-center w-full h-full border-b border-gray-secondary-300/60">
+      <Container className="flex items-center w-full h-full  border-gray-secondary-300/60 border-b-2 border-primaryDark">
         <nav className="relative z-50 flex items-center justify-between w-full ">
           <div className="flex items-center space-x-8 lg:space-x-12">
             <Link href="/" aria-label="Home">

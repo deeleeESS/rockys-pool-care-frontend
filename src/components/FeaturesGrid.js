@@ -227,14 +227,66 @@ const features = [
   },
 ]
 
+const Waves = () => {
+  return (
+    <>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-[16px]"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fillOpacity="1"
+          className="path-0 fill-secondary"
+        ></path>
+      </svg>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-[8px]"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fillOpacity="1"
+          className="path-0 fill-primaryDark"
+        ></path>
+      </svg>
+      <svg
+        id="svg"
+        viewBox="0 0 1440 345"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0"
+      >
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 94.59330143540669,225.27272727272725 189.18660287081337,250.54545454545453 280,245 C 370.8133971291866,239.45454545454547 457.8468899521532,203.09090909090912 566,195 C 674.1531100478468,186.90909090909088 803.425837320574,207.09090909090907 889,210 C 974.574162679426,212.90909090909093 1016.4497607655503,198.54545454545456 1101,194 C 1185.5502392344497,189.45454545454544 1312.7751196172248,194.72727272727272 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          strokeWidth="0"
+          fill="#FFFFFF"
+          fillOpacity="1"
+          className="path-0"
+        ></path>
+      </svg>
+    </>
+  );
+};
+
+
+
 export function FeaturesGrid() {
   return (
-    <section className="relative overflow-hidden bg-primary pt-20 pb-8 lg:pt-28 lg:pb-12">
+    <section className="relative overflow-hidden bg-primary pb-8  lg:pb-12">
       <Container>
-        <div className="relative mx-auto w-full max-w-lg sm:max-w-3xl lg:mx-0 lg:max-w-none">
-          <h2 className="mx-auto max-w-2xl text-center text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
+        <div className="relative mx-auto w-full max-w-lg sm:max-w-3xl lg:mx-0 lg:max-w-none pb-64">
+          {/* <h2 className="mx-auto max-w-2xl text-center text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
             Expert Pool Cleaning Services for a Sparkling Pool
-          </h2>
+          </h2> */}
           <div className="mt-10 grid sm:mt-16 sm:grid-cols-2 lg:mt-24 lg:grid-cols-3 border border-white">
             {features.map((feature, index) => (
               <div
@@ -266,6 +318,7 @@ export function FeaturesGrid() {
           </div>
         </div>
       </Container>
+      <Waves />
     </section>
   )
 }
