@@ -5,9 +5,9 @@ import { Button } from '../components/Button'
 
 const features = [
   {
-    name: 'Cloud hosting and storage',
+    name: 'Skimming and debris removal for a clean pool surface',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      'clearing the Way: Removing Debris to Unveil a Spotless Pool Surface',
     className:
       "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-gray-secondary-400/60",
     icon: function CloudIcon() {
@@ -37,9 +37,9 @@ const features = [
     },
   },
   {
-    name: 'Unlimited recording',
+    name: 'Vacuuming and brushing to eliminate dirt and sediment',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      'Banishing the Build-up: Deep Cleaning for a Pristine Pool Bottom',
     className:
       "before:top-0 before:w-full before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-[''] sm:before:h-0",
     icon: function ClipsIcon() {
@@ -72,9 +72,9 @@ const features = [
     },
   },
   {
-    name: 'Unlimitted editing',
+    name: 'Water chemistry testing and balancing for a safe and healthy swimming environment',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      'The Science of Safety: Expert Water Testing and Balancing for Optimal Pool Health',
     className:
       "sm:after:content-[''] sm:after:right-0 sm:after:h-5/6 sm:after:w-px sm:after:absolute sm:after:bg-gray-secondary-400/60 before:top-0 before:w-full sm:before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-['']",
     icon: function EditingIcon() {
@@ -108,9 +108,9 @@ const features = [
     },
   },
   {
-    name: 'Crisp audio optimizations',
+    name: 'Equipment inspection and adjustment to ensure optimal performance',
     description:
-      'Lorem ipsum dolor sit amet consequat facilisis consequat ultrices suspendisse faucibus mauris.',
+      'Fine-Tuning Excellence: Proactive Equipment Maintenance for Peak Pool Performance',
     className:
       "before:top-0 before:w-full sm:before:w-5/6 before:h-px before:absolute before:bg-gray-secondary-400/60 before:content-['']",
     icon: function AudioIcon() {
@@ -142,14 +142,13 @@ export function PlanFeatures() {
     <section className="relative overflow-hidden bg-vanilla py-16">
       <Container>
         <div className="relative mx-auto w-full max-w-lg items-center sm:max-w-xl md:max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-12">
-          <div className=" lg:col-span-5">
+          <div className=" lg:col-span-6">
             <h2 className="text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
-              Features included in all our plans
+                Regular Maintenance Excellence: Sparkling Pools, Hassle-Free
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-700 sm:mt-6">
-              Lorem ipsum dolor sit amet sodales enim orci venenatis nulla
-              tortor. Facilisis quam nunc eleifend aliqua tempus luctus pretium
-              do nunc pulvinar tellus ac lacinia.
+                Let our diligent team handle the routine maintenance, ensuring your pool
+                remains pristine and ready for relaxation.
             </p>
             <div className="mt-8 sm:mt-12">
               <Button
@@ -190,7 +189,145 @@ export function PlanFeatures() {
               </Button>
             </div>
           </div>
-          <div className="mt-14 grid sm:-mx-6 sm:grid-cols-2 lg:col-span-7 lg:mx-0 lg:mt-0">
+          <div className="mt-14 grid sm:-mx-6 sm:grid-cols-2 lg:col-span-6 lg:mx-0 lg:mt-0">
+            {features.map((feature) => (
+              <div
+                key={feature.name}
+                className={clsx(
+                  feature.className,
+                  'relative flex flex-col items-center justify-center py-8 sm:p-6 lg:py-10 lg:px-8 '
+                )}
+              >
+                <div className="flex flex-1 flex-col">
+                  <feature.icon />
+                  <h3 className="mt-5 text-xl font-semibold leading-tighter text-slate-900 sm:mt-6">
+                    {feature.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="relative mx-auto w-full max-w-lg items-center sm:max-w-xl md:max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-12">
+          <div className="mt-14 grid sm:-mx-6 sm:grid-cols-2 lg:col-span-6 lg:mx-0 lg:mt-0">
+            {features.map((feature) => (
+              <div
+                key={feature.name}
+                className={clsx(
+                  feature.className,
+                  'relative flex flex-col items-center justify-center py-8 sm:p-6 lg:py-10 lg:px-8 '
+                )}
+              >
+                <div className="flex flex-1 flex-col">
+                  <feature.icon />
+                  <h3 className="mt-5 text-xl font-semibold leading-tighter text-slate-900 sm:mt-6">
+                    {feature.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className=" lg:col-span-6">
+            <h2 className="text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
+                Advanced Solutions for Comprehensive Pool Repairs
+           </h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-700 sm:mt-6">
+                Expert Repairs to Keep Your Pool in Prime Condition.
+            </p>
+            <div className="mt-8 sm:mt-12">
+              <Button
+                href="#plan-comparison-table"
+                variant="secondary"
+                size="md"
+              >
+                Compare our plans
+                <svg
+                  className="ml-3.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={14}
+                  height={14}
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <g clipPath="url(#clip0_79_335)">
+                    <path
+                      d="M13.9999 1.75008C13.9999 1.99683 13.8966 2.24183 13.6936 2.41508L7.56863 7.66508C7.24138 7.94595 6.7575 7.94595 6.43025 7.66508L0.305255 2.41508C-0.0622453 2.10008 -0.104245 1.54708 0.210755 1.18133C0.52488 0.814702 1.077 0.771826 1.44363 1.08683L6.99988 5.8477L12.5561 1.08595C12.9228 0.771826 13.4749 0.813826 13.789 1.18045C13.9308 1.34583 13.9999 1.54795 13.9999 1.75008Z"
+                      fill="#64748B"
+                    />
+                    <path
+                      d="M14.0002 7.00008C14.0002 7.24683 13.897 7.49183 13.694 7.66508L7.56896 12.9151C7.24171 13.196 6.75783 13.196 6.43058 12.9151L0.305582 7.66508C-0.0610435 7.35008 -0.103043 6.79708 0.211082 6.43045C0.526082 6.06383 1.07733 6.02095 1.44396 6.33595L7.00021 11.0977L12.5565 6.33595C12.9231 6.02183 13.4752 6.06383 13.7893 6.43045C13.9311 6.59583 14.0002 6.79795 14.0002 7.00008Z"
+                      fill="#1E293B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_79_335">
+                      <rect
+                        width={14}
+                        height={14}
+                        fill="white"
+                        transform="translate(0 14) rotate(-90)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="relative mx-auto w-full max-w-lg items-center sm:max-w-xl md:max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-12">
+          <div className=" lg:col-span-6">
+            <h2 className="text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-tight">
+              Seasonal Pool Cleaning: Renewing Your Pool&apos;s Brilliance
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-700 sm:mt-6">
+                Reveal the Brilliance: Transform Your Pool with Meticulous Seasonal Cleaning.
+            </p>
+            <div className="mt-8 sm:mt-12">
+              <Button
+                href="#plan-comparison-table"
+                variant="secondary"
+                size="md"
+              >
+                Compare our plans
+                <svg
+                  className="ml-3.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={14}
+                  height={14}
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
+                  <g clipPath="url(#clip0_79_335)">
+                    <path
+                      d="M13.9999 1.75008C13.9999 1.99683 13.8966 2.24183 13.6936 2.41508L7.56863 7.66508C7.24138 7.94595 6.7575 7.94595 6.43025 7.66508L0.305255 2.41508C-0.0622453 2.10008 -0.104245 1.54708 0.210755 1.18133C0.52488 0.814702 1.077 0.771826 1.44363 1.08683L6.99988 5.8477L12.5561 1.08595C12.9228 0.771826 13.4749 0.813826 13.789 1.18045C13.9308 1.34583 13.9999 1.54795 13.9999 1.75008Z"
+                      fill="#64748B"
+                    />
+                    <path
+                      d="M14.0002 7.00008C14.0002 7.24683 13.897 7.49183 13.694 7.66508L7.56896 12.9151C7.24171 13.196 6.75783 13.196 6.43058 12.9151L0.305582 7.66508C-0.0610435 7.35008 -0.103043 6.79708 0.211082 6.43045C0.526082 6.06383 1.07733 6.02095 1.44396 6.33595L7.00021 11.0977L12.5565 6.33595C12.9231 6.02183 13.4752 6.06383 13.7893 6.43045C13.9311 6.59583 14.0002 6.79795 14.0002 7.00008Z"
+                      fill="#1E293B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_79_335">
+                      <rect
+                        width={14}
+                        height={14}
+                        fill="white"
+                        transform="translate(0 14) rotate(-90)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </Button>
+            </div>
+          </div>
+          <div className="mt-14 grid sm:-mx-6 sm:grid-cols-2 lg:col-span-6 lg:mx-0 lg:mt-0">
             {features.map((feature) => (
               <div
                 key={feature.name}

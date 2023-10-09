@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 
-import TeamImage from '../images/stock/team.jpg'
+import CleaningImage from '../images/poolside.jpg'
 import { Container } from '../components/Container'
 
 export function StoryWithStats() {
@@ -27,45 +27,45 @@ export function StoryWithStats() {
               />
             </svg>
 
-            <span>Our story</span>
+            <span>Our Story of Quality Service</span>
           </p>
           <h1 className="mt-5 text-4xl font-semibold leading-snug text-slate-900 sm:max-w-xl sm:text-center sm:text-5xl sm:leading-snug md:mx-auto xl:mx-0">
-            Empowering podcasters since 2013
+              Revitalizing Pools, Renewing Memories
           </h1>
         </div>
         <div className="mt-12 flex flex-col md:mt-8 md:flex-row md:divide-x md:divide-gray-secondary-400/60">
           <div className="md:w-1/2 md:py-8 md:pr-6 lg:pr-16">
             <p className="text-lg leading-relaxed text-slate-700">
-              Lorem ipsum dolor sit amet sodales enim orci venenatis nulla
-              tortor. Facilisis quam nunc eleifend aliqua tempus luctus pretium
-              do nunc pulvinar tellus ac lacinia. Ultrices habitasse leo
-              pulvinar laoreet molestie dolore lobortis eros interdum fermentum
-              nullam massa ac.
+            At Rocky&apos;s Pool Care, we understand that a clean and well-maintained pool is the centerpiece
+            of any outdoor oasis. We have built our reputation on delivering exceptional service and ensuring
+            that our customers&apos; pools are sparkling, safe, and ready to be enjoyed all year round.
             </p>
             <p className="mt-8 text-lg leading-relaxed text-slate-700">
-              Incididunt feugiat cras fusce tortor lectus cursus nulla vivamus
-              fringilla. Nisl luctus at elementum fames pellentesque malesuada
-              justo sed dictumst ultrices dui turpis.
+              As a second-generation business owner, we are excited to continue the legacy and passion for pool
+              care that my father has instilled in us. With our deep understanding of the business and our
+              commitment to customer satisfaction, we are dedicated to carrying forward the high standards that
+              have made us a trusted name in the industry.
             </p>
           </div>
           <div className="mt-8 sm:mt-0 md:w-1/2 md:py-8 md:pl-6 lg:pl-16">
             <p className="text-lg leading-relaxed text-slate-700">
-              Lorem ipsum dolor sit amet dictum consequat arcu quisque justo
-              turpis. Mauris odio tellus convallis bibendum vivamus gravida
-              praesent turpis. Fermentum eiusmod eget sagittis ac dapibus
-              eiusmod sodales consectetur duis quam bibendum eleifend. Eros
-              pulvinar nullam lobortis enim morbi nullam cursus lectus laoreet
-              molestie etiam ut tempor cras. Sagittis ultrices massa mollis
-              proin euismod eros quam.
+              With our comprehensive range of services, we can address all your pool maintenance needs. Whether
+              you require regular pool cleaning to keep your pool in pristine condition, chemical balancing to
+              ensure a safe and healthy swimming environment, equipment repairs to keep everything running smoothly,
+              or pool opening and closing services to transition seamlessly between seasons, we have the expertise and resources to handle it all.
+
+              As a team, we take immense pride in our work. We continually stay updated with the latest industry trends,
+              techniques, and technologies to provide you with the best possible service. Our technicians are trained
+              professionals who bring their knowledge and passion to every job they undertake. You can trust that your pool will be in capable hands.
             </p>
           </div>
         </div>
         <div className="relative mt-16 sm:mt-20">
           <div className="aspect-w-2 aspect-h-1">
             <Image
-              className="object-cover object-center"
-              src={TeamImage}
-              alt="Team"
+              className="object-cover object-center h-screen"
+              src={CleaningImage}
+              alt="Pool Side View"
             />
           </div>
           <div className="absolute top-full left-6 right-6 flex max-w-4xl -translate-y-12 flex-col divide-y divide-gray-secondary-400/60 bg-amber-100 px-10 py-10 md:left-[unset] md:top-[unset] md:right-0 md:-bottom-1/4 md:w-full md:flex-row md:divide-y-0 md:divide-x md:px-8 lg:p-12">

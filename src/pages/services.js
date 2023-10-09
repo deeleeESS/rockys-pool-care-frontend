@@ -23,8 +23,8 @@ export default function Home() {
       <Header />
       <PricingCards />
       <PlanFeatures />
-      <FeaturedTestimonials />
-      <PlansTable />
+      {/* <FeaturedTestimonials /> */}
+      {/* <PlansTable /> */}
       <Faqs />
       <CallToAction />
       <Footer />
