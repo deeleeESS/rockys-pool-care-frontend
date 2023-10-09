@@ -20,7 +20,7 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <AboutHero />
+      {/* <AboutHero /> */}
       <StoryWithStats />
       <FeaturesGridDark />
       <Team />

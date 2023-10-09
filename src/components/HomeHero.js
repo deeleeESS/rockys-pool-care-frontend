@@ -5,6 +5,7 @@ import Avatar from '../images/avatars/avatar-01.jpg'
 import homeHeroImg from '../images/stock/house-pool-01.jpg'
 import { Container } from '../components/Container'
 import { Button } from '../components/Button'
+import Link from 'next/link'
 
 const Waves = () => {
   return (
@@ -90,15 +91,20 @@ export function HomeHero() {
             </li>
           </ul>
           <div className="mt-10 flex flex-col sm:flex-row sm:space-x-5 md:mt-12 md:justify-center xl:justify-start">
-            <Button href="/signup" className="w-full sm:w-auto">
-              Pay My Bill Online
+            <Link href="/contact">
+              <a className="w-full sm:w-auto">
+                Get A Free Quote
+              </a>
+            </Link>
+            <Button href="/contact" className="w-full sm:w-auto">
+              Get A Free Quote
             </Button>
             <Button
               href="/signin"
               variant="ghost"
               className="mt-3.5 w-full sm:mt-0 sm:w-auto"
             >
-              See our solutions
+              See Our Service
             </Button>
           </div>
           <p className="mt-4 flex text-md text-slate-600/90 md:justify-center xl:justify-start xl:text-base">

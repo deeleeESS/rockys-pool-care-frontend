@@ -296,12 +296,12 @@ export function FeaturesGrid() {
                   'relative mx-auto flex max-w-md flex-col items-center justify-center py-12 px-8 sm:mx-0 sm:max-w-none xl:py-16 xl:px-12 bg-white bg-opacity-10'
                 )}
               >
-                <div className="flex flex-1 flex-col items-center">
+                <div className="flex flex-1 flex-col items-center h-full">
                   <feature.icon />
                   <h3 className="mt-8 text-center text-3xl font-semibold leading-tighter text-slate-900 sm:mt-12">
                     {feature.name}
                   </h3>
-                  <p className="mt-5 text-center leading-relaxed text-slate-600 sm:mt-6">
+                  <p className="mt-5 text-center leading-relaxed text-slate-600 sm:mt-6 bg-white bg-opacity-60 p-4 rounded-lg border-2 border-secondary hover:bg-opacity-70">
                     {feature.description}
                   </p>
                 </div>

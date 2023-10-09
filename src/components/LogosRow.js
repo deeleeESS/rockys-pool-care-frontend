@@ -7,6 +7,7 @@ import logoDailyNews from '../images/logos/daily-news.svg'
 import logoEntrepreneur from '../images/logos/entrepreneur.svg'
 import logoQuartz from '../images/logos/quartz.svg'
 import logoWired from '../images/logos/wired.svg'
+import Link from 'next/link'
 
 const companies = [
   { name: 'Buzzfeed', logo: logoBuzzfeed },
@@ -18,25 +19,11 @@ const companies = [
 
 export function LogosRow() {
   return (
-    <section className="relative overflow-hidden bg-vanilla">
-      <Container>
-        <p className="text-base font-semibold tracking-widest text-center uppercase text-slate-500">
-          As featured in
-        </p>
-        <ul className="grid grid-cols-1 mt-10 gap-x-5 gap-y-8 sm:grid-cols-6 sm:gap-x-12 lg:grid-cols-5">
-          {companies.map((company, index) => (
-            <li
-              key={company.name}
-              className={clsx(
-                index <= 2 ? 'sm:col-span-2' : 'sm:col-span-3',
-                'flex justify-center sm:col-span-2 lg:col-span-1'
-              )}
-            >
-              <Image src={company.logo} alt={company.name} />
-            </li>
-          ))}
-        </ul>
-      </Container>
-    </section>
-  )
+    <div className="bg-blue-500 text-white py-4 px-6 rounded-lg shadow-md flex items-center justify-between">
+      <h2 className="text-lg font-semibold">Get a free quote today!</h2>
+      <Link href="/quote">
+        <a className="px-4 py-2 bg-white text-blue-500 font-semibold rounded shadow hover:bg-gray-100 transition-colors duration-200">Request Quote</a>
+      </Link>
+    </div>
+  );
 }

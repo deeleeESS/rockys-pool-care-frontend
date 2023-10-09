@@ -107,18 +107,6 @@ export function PricingCards() {
                 <p className="mt-3.5 text-center text-sm text-slate-500">
                   No credit card required
                 </p>
-                <hr className="border-gray-secondary-400/35 my-10" />
-                <p className="font-medium text-slate-900">
-                  {tier.name} includes:
-                </p>
-                <ul className="mt-6 space-y-4">
-                  {tier.features.map((feature) => (
-                    <li key={feature} className="flex items-center space-x-6">
-                      <CheckCircleIcon className="h-5 w-5 shrink-0 text-slate-800" />
-                      <p className="text-slate-600">{feature}</p>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
