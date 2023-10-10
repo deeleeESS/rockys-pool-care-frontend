@@ -9,7 +9,8 @@ type Data = {
 }
 
 function checkAPIKey(req, apiKey) {
-  const providedKey = req.headers['WEBHOOK_API_KEY']; // Assuming the key is sent as "x-api-key"
+  // const providedKey = req.headers['WEBHOOK_API_KEY']; 
+  const providedKey = "TESTER"
   
   if (!providedKey) {
       throw new Error('No API key provided.');
@@ -37,6 +38,7 @@ export default async function handler(
 
   } catch (error) {
       // Handle errors thrown by checkAPIKey or any other errors
+      console.log(error)
       res.status(401).json({ message: error.message }); // 401 for Unauthorized
   }
 };
