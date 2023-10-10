@@ -27,7 +27,7 @@ export default async function handler(
 ) {
   try {
       // Check the API key before proceeding
-      checkAPIKey(req, WEBHOOK_API_KEY);
+      checkAPIKey(req, "TESTER");
 
       // If the key is valid, the rest of your endpoint logic goes here:
       if (req.method === 'POST') {
@@ -37,6 +37,7 @@ export default async function handler(
 
   } catch (error) {
       // Handle errors thrown by checkAPIKey or any other errors
+      console.log(error)
       res.status(401).json({ message: error.message }); // 401 for Unauthorized
   }
 };
