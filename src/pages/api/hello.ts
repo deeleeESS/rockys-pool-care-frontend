@@ -2,7 +2,7 @@
 
 import { NextApiRequest, NextApiResponse } from "../../../node_modules/next/dist/shared/lib/utils"
 
-const WEBHOOK_API_KEY = process.env.WEBHOOK_API_KEY;
+const webhook_api_key = process.env.webhook_api_key;
 
 type Data = {
   message: string
@@ -28,7 +28,7 @@ export default async function handler(
 ) {
   try {
       //Check the API key before proceeding
-      checkAPIKey(req, "TESTER");
+      checkAPIKey(req, process.env.webhook_api_key);
       console.log(req.headers)
 
       // If the key is valid, the rest of your endpoint logic goes here:
