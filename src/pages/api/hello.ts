@@ -9,7 +9,8 @@ type Data = {
 }
 
 function checkAPIKey(req, apiKey) {
-  const providedKey = req.headers['WEBHOOK_API_KEY']; // Assuming the key is sent as "x-api-key"
+  console.log(req.headers)
+  const providedKey = req.headers['webhook_api_key']; // Assuming the key is sent as "x-api-key"
   
   if (!providedKey) {
       throw new Error('No API key provided.');
@@ -26,8 +27,9 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   try {
-      // Check the API key before proceeding
+      //Check the API key before proceeding
       checkAPIKey(req, "TESTER");
+      console.log(req.headers)
 
       // If the key is valid, the rest of your endpoint logic goes here:
       if (req.method === 'POST') {
