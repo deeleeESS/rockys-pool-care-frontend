@@ -9,7 +9,7 @@ type Data = {
 }
 
 function checkAPIKey(req, apiKey) {
-  console.log(req.headers)
+  
   const providedKey = req.headers['webhook_api_key']; // Assuming the key is sent as "x-api-key"
   
   if (!providedKey) {
@@ -29,7 +29,7 @@ export default async function handler(
   try {
       //Check the API key before proceeding
       checkAPIKey(req, process.env.webhook_api_key);
-      console.log(req.headers)
+      console.log('success')
 
       // If the key is valid, the rest of your endpoint logic goes here:
       if (req.method === 'POST') {
