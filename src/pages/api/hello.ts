@@ -34,6 +34,7 @@ export default async function handler(
       // If the key is valid, the rest of your endpoint logic goes here:
       if (req.method === 'POST') {
         console.log('POST data:', req.body);
+        //TODO: CREATE ENTRY INTO FIRESTORE FIREBASE
       }
       res.status(200).json({ message: 'Your endpoint logic results.' });
 
